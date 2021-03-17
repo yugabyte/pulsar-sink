@@ -71,9 +71,9 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>com.datastax.oss</groupId>
+        <groupId>com.yugabyte</groupId>
         <artifactId>messaging-connectors-commons-core</artifactId>
-        <version>${messaging.connectors.commons.version}</version>
+        <version>1.0.9</version>
       </dependency>
       <dependency>
         <groupId>io.netty</groupId>
@@ -205,20 +205,25 @@
         <artifactId>wiremock-junit5</artifactId>
         <version>${wiremock-junit.version}</version>
       </dependency>
-      <dependency>
+      <!--<dependency>
         <groupId>com.datastax.oss</groupId>
         <artifactId>java-driver-core</artifactId>
         <version>${oss.driver.version}</version>
+      </dependency>-->
+      <dependency>
+        <groupId>com.yugabyte</groupId>
+        <artifactId>java-driver-core</artifactId>
+        <version>4.6.0-yb-6</version>
       </dependency>
       <dependency>
-        <groupId>com.datastax.oss</groupId>
+        <groupId>com.yugabyte</groupId>
         <artifactId>java-driver-test-infra</artifactId>
-        <version>${oss.driver.version}</version>
+        <version>4.6.0-yb-6</version>
       </dependency>
       <dependency>
-        <groupId>com.datastax.oss</groupId>
+        <groupId>com.yugabyte</groupId>
         <artifactId>dsbulk-tests</artifactId>
-        <version>${dsbulk.version}</version>
+        <version>1.6.0</version>
       </dependency>
       <dependency>
         <groupId>com.github.spotbugs</groupId>

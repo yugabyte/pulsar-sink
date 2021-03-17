@@ -33,8 +33,9 @@
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>com.datastax.oss</groupId>
+      <groupId>com.yugabyte</groupId>
       <artifactId>messaging-connectors-commons-core</artifactId>
+      <version>1.0.9</version>
     </dependency>
   </dependencies>
   <build>

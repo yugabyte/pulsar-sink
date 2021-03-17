@@ -31,8 +31,9 @@
   </properties>
   <dependencies>
     <dependency>
-      <groupId>com.datastax.oss</groupId>
+      <groupId>com.yugabyte</groupId>
       <artifactId>messaging-connectors-commons-core</artifactId>
+      <version>1.0.9</version>
     </dependency>
     <dependency>
       <groupId>io.netty</groupId>
@@ -112,12 +113,13 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>com.datastax.oss</groupId>
+      <groupId>com.yugabyte</groupId>
       <artifactId>java-driver-test-infra</artifactId>
+      <version>4.6.0-yb-6</version>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>com.datastax.oss</groupId>
+      <groupId>com.yugabyte</groupId>
       <artifactId>dsbulk-tests</artifactId>
       <scope>test</scope>
     </dependency>
@@ -166,8 +168,8 @@
                          Metrics, we have to relocate DropWizard packages
                          references -->
                   <include>io.dropwizard.metrics:*</include>
-                  <include>com.datastax.oss:java-driver-core:*</include>
-                  <include>com.datastax.oss:messaging-connectors-commons-core:*</include>
+                  <include>com.yugabyte:java-driver-core:*</include>
+                  <include>com.yugabyte:messaging-connectors-commons-core:*</include>
                 </includes>
               </artifactSet>
               <filters>
